@@ -1,0 +1,5 @@
+@EndUserText: {label: 'Service Definition for ZC_BO_EMAILUPLOAD'}
+@ObjectModel: {leadingEntity: {name: 'ZC_BO_EMAILUPLOAD'}}
+define service ZUI_BO_EMAILUPLOAD_O4 {
+  expose ZC_BO_EMAILUPLOAD;
+}

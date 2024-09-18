@@ -1,0 +1,46 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Custom CDS: EMail Upload",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "objectType": "DDLS",
+    "objectName": "ZC_BO_EMAILUPLOAD"
+  },
+  "fields": [
+    {
+      "name": "ZUUID",
+      "nature": "general"
+    },
+    {
+      "name": "ZBOFIRSTNAME",
+      "nature": "general"
+    },
+    {
+      "name": "ZBOLASTNAME",
+      "nature": "general"
+    },
+    {
+      "name": "ZBOEMAIL",
+      "nature": "general"
+    },
+    {
+      "name": "CREATEDAT",
+      "nature": "general"
+    },
+    {
+      "name": "LASTMODIFIEDDATETIME",
+      "nature": "general"
+    },
+    {
+      "name": "CREATIONUSER",
+      "nature": "general"
+    },
+    {
+      "name": "LASTMODIFIEDUSER",
+      "nature": "general"
+    }
+  ]
+}

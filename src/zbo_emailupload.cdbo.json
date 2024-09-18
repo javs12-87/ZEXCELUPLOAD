@@ -1,0 +1,50 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Custom Table: EMail Upload",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "objectType": "TABL",
+    "objectName": "ZBO_EMAILUPLOAD"
+  },
+  "fields": [
+    {
+      "name": "CLIENT",
+      "nature": "general"
+    },
+    {
+      "name": "ZUUID",
+      "nature": "general"
+    },
+    {
+      "name": "ZBO_FIRSTNAME",
+      "nature": "general"
+    },
+    {
+      "name": "ZBO_LASTNAME",
+      "nature": "general"
+    },
+    {
+      "name": "ZBO_EMAIL",
+      "nature": "general"
+    },
+    {
+      "name": "CREATEDAT",
+      "nature": "general"
+    },
+    {
+      "name": "LASTMODIFIEDDATETIME",
+      "nature": "general"
+    },
+    {
+      "name": "CREATIONUSER",
+      "nature": "general"
+    },
+    {
+      "name": "LASTMODIFIEDUSER",
+      "nature": "general"
+    }
+  ]
+}

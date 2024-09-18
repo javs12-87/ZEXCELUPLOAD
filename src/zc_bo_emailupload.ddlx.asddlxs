@@ -1,0 +1,119 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Zuuid'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Zuuid'
+annotate view ZC_BO_EMAILUPLOAD with
+{
+  @EndUserText.label: 'Zuuid'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'UUID'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  Zuuid;
+  
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'First Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'First Name'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  ZboFirstname;
+  
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'Last Name'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'Last Name'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  ZboLastname;
+  
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'Email'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'Email'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  ZboEmail;
+  
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'Created On'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'Created On'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  Createdat;
+  
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'Changed On'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'Changed On'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  Lastmodifieddatetime;
+  
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'Created By'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'Created By'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  Creationuser;
+  
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'Changed By'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'Changed By'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  Lastmodifieduser;
+}

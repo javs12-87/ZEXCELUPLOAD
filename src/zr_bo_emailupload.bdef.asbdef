@@ -1,0 +1,47 @@
+managed implementation in class ZBP_R_BO_EMAILUPLOAD unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_BO_EMAILUPLOAD alias ZrBoEmailupload
+persistent table ZBO_EMAILUPLOAD
+draft table ZBO_EMAILUPLOA_D
+etag master Lastmodifieddatetime
+lock master total etag Lastmodifieddatetime
+authorization master( global )
+
+{
+  field ( readonly )
+   Zuuid,
+   Createdat,
+   Lastmodifieddatetime,
+   Creationuser,
+   Lastmodifieduser;
+
+  field ( numbering : managed )
+   Zuuid;
+
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  static action fileUpload parameter ZC_ABS_EMAILUPLOAD;
+  static function downloadFile result [1] ZC_ABS_EMAILDOWNLOAD;
+
+  mapping for ZBO_EMAILUPLOAD
+  {
+    Zuuid = zuuid;
+    ZboFirstname = zbo_firstname;
+    ZboLastname = zbo_lastname;
+    ZboEmail = zbo_email;
+    Createdat = createdat;
+    Lastmodifieddatetime = lastmodifieddatetime;
+    Creationuser = creationuser;
+    Lastmodifieduser = lastmodifieduser;
+  }
+}
